@@ -2,9 +2,17 @@
 
 class Human{
     // Properties
-    age = 13; //public
+    age; //public
     #wt = 70;  //private :> When you want to make a variable private in JavaScript just use a # symbol before your variable
     ht = 180;
+
+    // Constructor 
+
+    constructor(newAge, newHeight, newWeight){
+        this.age = newAge;
+        this.ht = newHeight;
+        this.#wt = newWeight;
+    }
 
     // Behaviour
 
@@ -28,6 +36,7 @@ class Human{
     }
 }
 
+/*
 let obj = new Human();
 console.log(obj.age);
 console.log(obj.wt);  //It gives us undefined because wt is private and we can not access a private member out side of a scope
@@ -36,5 +45,11 @@ console.log(obj.fatchWeight); //Here we print private variable with the help of 
 
 obj.modifyWeight = 30; // first we set the new value to the set method with the help of obj
 console.log(obj.fatchWeight); //again we call get method to get a new valuw
+*/
+
+let obj1 = new Human(23, 182, 80);
+console.log(obj1.ht);  //Here we print new height with the help of constructor
+console.log(obj1.age);
+console.log(obj1.fatchWeight);
 
 
