@@ -1,16 +1,44 @@
 
+function getAge(){
+    return 190;
+}
 
+function utility(name = "Sachin", age = getAge()){
+    console.log(name," ",age);
+}
+
+utility();
+
+
+/*
 function sayName(myName = "sachin"){ //Here we set the default value for the function
     console.log(myName);
 }
 
 sayName("Sachin Sharma");
+*/
 
+/*
 function  comeAgain(fName = "Saurabh", lName = "Sharma"){  // how to pass for multiple parameter
     console.log("My name is : ", fName, lName);
 }
 
 comeAgain();
+*/
+
+/*
+function sayHello(fName = "Sachin", lName = fName.toUpperCase()){
+    console.log("Hello ", fName, lName);
+}
+
+sayHello("Saurabh");
+*/
+
+function solve(value = {age:12, wt:30, ht:120}){
+    console.log("My detail : ", value);
+}
+
+solve();
 
 class Human{
     // Properties
