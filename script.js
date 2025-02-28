@@ -1,5 +1,11 @@
 
 
+function sayName(myName = "sachin"){ //Here we set the default value for the function
+    console.log(myName);
+}
+
+sayName("Sachin Sharma");
+
 class Human{
     // Properties
     age; //public
@@ -47,9 +53,12 @@ obj.modifyWeight = 30; // first we set the new value to the set method with the 
 console.log(obj.fatchWeight); //again we call get method to get a new valuw
 */
 
+
+/*
 let obj1 = new Human(23, 182, 80);
 console.log(obj1.ht);  //Here we print new height with the help of constructor
 console.log(obj1.age);
 console.log(obj1.fatchWeight);
+*/
 
 
