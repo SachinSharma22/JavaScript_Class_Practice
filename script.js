@@ -6,6 +6,12 @@ function sayName(myName = "sachin"){ //Here we set the default value for the fun
 
 sayName("Sachin Sharma");
 
+function  comeAgain(fName = "Saurabh", lName = "Sharma"){  // how to pass for multiple parameter
+    console.log("My name is : ", fName, lName);
+}
+
+comeAgain();
+
 class Human{
     // Properties
     age; //public
